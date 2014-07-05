@@ -11,13 +11,17 @@ var Observer = require("./lib/Observer");
 var url = "http://www.fifa.com/worldcup/matches/index.html";
 var IPs = new Observer.IPCollection();
 
+// Allows for cross origin requests
 app.use(cors());
+
+// Getting matchup data everyday leading up to today
 app.get("/api/today", function(req, res) {
     console.log("GET Request from %s", req.ip);
 
     var user = new Observer.User(req.ip);
     IPs.push(user);
 
+    // Checking for local data
     fs.exists("./public/assets/data/fifa-matchup-data.json", function(exists) {
         if (!exists) {
             console.log("No data found. Scraping for latest Fifa matchup data.");
@@ -38,6 +42,7 @@ app.get("/api/today", function(req, res) {
         } else {
             var curr = Fifa.date();
 
+            // Checking if local data is up-to-date
             if (curr > Fifa.last()) {
                 console.log('Data is outdated. Updating to latest FIFA match data.');
                 request(url, function(err, response, html) {
@@ -60,6 +65,8 @@ app.get("/api/today", function(req, res) {
                 fs.readFile("./public/assets/data/fifa-matchup-data.json", {
                     encoding: "utf8"
                 }, function(err, data) {
+                    // File should exist since it just checked
+                    // Another layer of error checking just in case 
                     if (err) {
                         console.log('Local match data copy not found unexpectedly...');
 
@@ -82,6 +89,7 @@ app.get("/api/today", function(req, res) {
     });
 });
 
+// Gets all matchup data > today
 app.get('/api/tomorrow', function(req, res) {
     console.log('GET request from %s', req.ip);
 
