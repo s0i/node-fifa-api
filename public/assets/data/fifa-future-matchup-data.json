@@ -1,0 +1,62 @@
+[
+    {
+        "id": -5,
+        "teamAway": "[W62]",
+        "teamHome": "[W61]",
+        "flagAway": "images/flags/blank.png",
+        "flagHome": "images/flags/blank.png",
+        "date": "13 Jul 2014 - 16:00 Local time",
+        "arena": "Estadio do Maracana",
+        "group": "Final"
+    },
+    {
+        "id": -4,
+        "teamAway": "[L62]",
+        "teamHome": "[L61]",
+        "flagAway": "images/flags/blank.png",
+        "flagHome": "images/flags/blank.png",
+        "date": "12 Jul 2014 - 17:00 Local time",
+        "arena": "Estadio Nacional",
+        "group": "Play-off for third place"
+    },
+    {
+        "id": -3,
+        "teamAway": "[W60]",
+        "teamHome": "[W59]",
+        "flagAway": "images/flags/blank.png",
+        "flagHome": "images/flags/blank.png",
+        "date": "09 Jul 2014 - 17:00 Local time",
+        "arena": "Arena de Sao Paulo",
+        "group": "Semi-finals"
+    },
+    {
+        "id": -2,
+        "teamAway": "Germany",
+        "teamHome": "Brazil",
+        "flagAway": "images/flags/Germany.png",
+        "flagHome": "images/flags/Brazil.png",
+        "date": "08 Jul 2014 - 17:00 Local time",
+        "arena": "Estadio Mineirao",
+        "group": "Semi-finals"
+    },
+    {
+        "id": -1,
+        "teamAway": "Costa Rica",
+        "teamHome": "Netherlands",
+        "flagAway": "images/flags/Costa Rica.png",
+        "flagHome": "images/flags/Netherlands.png",
+        "date": "05 Jul 2014 - 17:00 Local time",
+        "arena": "Arena Fonte Nova",
+        "group": "Quarter-finals"
+    },
+    {
+        "id": 0,
+        "teamAway": "Belgium",
+        "teamHome": "Argentina",
+        "flagAway": "images/flags/Belgium.png",
+        "flagHome": "images/flags/Argentina.png",
+        "date": "05 Jul 2014 - 13:00 Local time",
+        "arena": "Estadio Nacional",
+        "group": "Quarter-finals"
+    }
+]
