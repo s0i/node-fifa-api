@@ -1,8 +1,8 @@
 {
     "name": "node-fifa-scrape",
     "version": "0.0.1",
-    "description": "Scrape the web",
-    "main": "scrape.js",
+    "description": "Scraping FIFA 2014 World Cup data",
+    "main": "app.js",
     "author": "s0i",
     "dependencies": {
         "express": "latest",
@@ -10,12 +10,9 @@
         "cheerio": "latest",
         "cors": "latest"
     },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "repository": {
         "type": "git",
-        "url": "https://www.github.com/s0i/s0i-node-fifa.git"
+        "url": "git://github.com/s0i/node-fifa-api.git"
     },
     "keywords": [
         "scrape",
@@ -25,5 +22,5 @@
         "cup",
         "2014"
     ],
-    "license": "ISC"
+    "license": "MIT"
 }
